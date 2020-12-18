@@ -21,7 +21,7 @@ describe("Proof Of Existence", function() {
      */
   });
 
-  it("proofFor", async function() {
+  it("proofFor document", async function() {
     /**
      * 
      * do something ...

@@ -35,6 +35,8 @@ TODO adding result
 after testing if you want to deploy contract using command.
 
 ```
+$ npx hardhat accounts
+$ npx hardhat node
 $ npx hardhat run scripts/sample-script.js --network localhost
 
 TODO adding result
