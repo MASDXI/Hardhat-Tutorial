@@ -15,7 +15,7 @@ async function main() {
 
   // We get the contract to deploy
   const PoE = await hre.ethers.getContractFactory("ProofOfExistence");
-  const poe = await PoE.deploy("Hello, Hardhat!");
+  const poe = await PoE.deploy();
 
   await poe.deployed();
 
