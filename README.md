@@ -23,7 +23,7 @@ for unit testing smartcontract using command.
 ```
 $ npx hardhat test
 ```
-expecting `sample-test.js` result 
+expecting `sample-test.js` result.
 ```
 
 TODO adding result
