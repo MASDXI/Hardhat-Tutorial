@@ -4,7 +4,7 @@
 ### - unit-test is not coverage 100%
 ### - update README.md
 
-Tutorial using Hardhat(Builer) complie, deploy and automated unit tests Solidity.
+Tutorial using Hardhat(Buidler) complie, deploy and automated unit tests Solidity.
 
 To run these tutorials, you must have the following installed:
 
