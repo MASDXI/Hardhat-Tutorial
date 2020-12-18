@@ -1,6 +1,8 @@
 # Tutorial-using-Hardhat
 
-### TODO unit-test is not coverage 100%
+### TODO List
+### - unit-test is not coverage 100%
+### - update README.md
 
 Tutorial using Hardhat(Builer) complie, deploy and automated unit tests Solidity.
 
