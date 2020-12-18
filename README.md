@@ -1,4 +1,7 @@
 # Tutorial-using-Hardhat
+
+### TODO unit-test is not coverage 100%
+
 Tutorial using Hardhat(Builer) complie, deploy and automated unit tests Solidity.
 
 To run these tutorials, you must have the following installed:
