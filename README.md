@@ -1,20 +1,16 @@
 # Tutorial-using-Hardhat
 
-### TODO List
-### - unit-test is not coverage 100%
-### - update README.md
-
 Tutorial using Hardhat(Buidler) complie, deploy and automated unit tests Solidity.
 
 To run these tutorials, you must have the following installed:
 
-```
+```bash
 $ npm install
 ```
 
 for complile your smartcontract to get an abi and artifact of smartcontract for unit test using command.
 
-```
+```bash
 $ npx hardhat compile
 ```
 
@@ -24,7 +20,7 @@ for unit testing smartcontract using command.
 $ npx hardhat test
 ```
 expecting `sample-test.js` result.
-```
+```bash
 
   Proof Of Existence
     ✓ notarize document (xxms)
@@ -38,14 +34,14 @@ expecting `sample-test.js` result.
 
 after testing if you want to deploy contract using command.
 
-```
+```bash
+
 $ npx hardhat accounts
 $ npx hardhat node
 # Open another Terminal
 $ npx hardhat run scripts/sample-script.js --network localhost
 
 # result in npx hardhat node Terminal
-
 web3_clientVersion
 eth_chainId
 eth_accounts
@@ -68,7 +64,6 @@ eth_chainId (2)
 eth_getTransactionReceipt
 
 # result in npx hardhat run Terminal
-
 Proof Of Existence deployed to: 0x5FbDB2315678afecb367f032d93F642f64180aa3
 
 ```
