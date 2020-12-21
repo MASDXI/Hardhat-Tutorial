@@ -4,6 +4,10 @@ Tutorial using Hardhat(Buidler) complie, deploy and automated unit tests Solidit
 
 To run these tutorials, you must have the following installed:
 
+- [nodejs](https://nodejs.org/en/)
+
+- [nvm](https://github.com/nvm-sh/nvm)
+
 ```bash
 $ npm install
 ```
