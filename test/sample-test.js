@@ -1,33 +1,30 @@
 const { expect } = require("chai");
 describe("Proof Of Existence", function() {
 
-  //TODO BeforeEach Deployed smart contract
+  const SAMPLE_TEXT = "Hello world";
+  let contract;
 
-  it("Check document if existed", async function() {
-    const PoE = await ethers.getContractFactory("ProofOfExistence");
-    const poe = await PoE.deploy();
-
-    const checkdoc = await poe.checkDocument("Hello world");
-    
-
-    expect(checkdoc).to.equal(false);
+  beforeEach(async () => {
+    const CONTRACT = await ethers.getContractFactory("ProofOfExistence");
+    contract = await CONTRACT.deploy();
   });
 
-  it("Notarize document", async function() {
-    /**
-     * 
-     * do something ...
-     * 
-     */
+  it("notarize document", async function() {
+    await contract.notarize(SAMPLE_TEXT)
+    const result = await contract.checkDocument(SAMPLE_TEXT);
+    expect(result).to.equal(true);
+  });
+
+  it("check document", async function() {
+    const result = await contract.checkDocument('foo bar');
+    expect(result).to.equal(false);
   });
 
   it("proofFor document", async function() {
-    /**
-     * 
-     * do something ...
-     * 
-     */
+    const bytes = ethers.utils.toUtf8Bytes(SAMPLE_TEXT);
+    const keccak256 = ethers.utils.keccak256(bytes);
+    const result = await contract.proofFor(SAMPLE_TEXT);
+    expect(result).to.equal(keccak256);
   });
-
 });
 

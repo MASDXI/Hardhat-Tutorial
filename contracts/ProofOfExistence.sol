@@ -33,10 +33,11 @@ contract ProofOfExistence {
   
   /** 
    * @param document (string)
-   * @dev helper function to get a document's sha256
-   * @return encrypt document in 0x(SHA256(document))
+   * @dev helper function to get a document's keccak256
+   * @return encrypt document in 0x(keccak256(document))
    */
   function proofFor(string memory document) pure public returns (bytes32) {
+    require(bytes(document).length > 0,"cannot be empty");
     return keccak256(bytes(document));
   }
   
