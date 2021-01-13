@@ -12,13 +12,13 @@ To run these tutorials, you must have the following installed:
 $ npm install
 ```
 
-for complile your smartcontract to get an abi and artifact of smartcontract for unit test using command.
+to compile your smart contract to get an ABI and artifact of a smart contract for unit test using the command.
 
 ```bash
 $ npx hardhat compile
 ```
 
-for unit testing smartcontract using command.
+for a unit testing smart contract using the command line.
 
 ```
 $ npx hardhat test
@@ -36,7 +36,7 @@ expecting `sample-test.js` result.
 
 ```
 
-after testing if you want to deploy contract using command.
+after testing if you want to deploy the contract using the command line.
 
 ```bash
 
