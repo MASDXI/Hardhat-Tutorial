@@ -2,7 +2,7 @@
 pragma solidity >= 0.5.0 < 0.8.0;
 
 /** 
- * @author AIS NEXT BCD (BlockChain Development) Team
+ * @author AIS NEXT BlockChain Development
  * @title Proof of Existence (PoE)
  * @dev Applied Proof Proof of Existence on Ethereum in Best practices.
  *      You can applied this example in other project use-case such as 
